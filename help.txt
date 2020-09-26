@@ -1,0 +1,19 @@
+run:
+	npx create-react-app (folderName)
+	npm install -g yarn
+	yarn build
+
+To install surge:
+	npm -i -g surge
+
+To Deploy a folder to surge
+	surge token
+
+	surge
+
+TO WORKFLOW:
+	1.Node.js environment (version: 12)
+	2.github action for yarn (cmd: install)
+	3.creating build (yarn build)
+	4.Installing surge (npm install -g surge)
+	5.Deploying on surge surge ./build url --token ${{secrets.token}
